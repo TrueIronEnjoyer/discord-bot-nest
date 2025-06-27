@@ -31,6 +31,22 @@
 $ npm install
 ```
 
+## 🔧 Environment Variables Setup
+
+Before running the project, create a `.env` file in the root directory with the following content:
+
+```env
+DISCORD_TOKEN="your_discord_bot_token"
+DATABASE_URL="file:./data.db"
+```
+
+### Variables
+
+- `DISCORD_TOKEN` — your Discord bot token. You can get it from the [Discord Developer Portal](https://discord.com/developers/applications) under the **Bot** section of your application.
+- `DATABASE_URL` — the connection string used by [Prisma](https://www.prisma.io/) to access the database.  
+  This project uses a local SQLite database (`data.db`) located in the root directory.
+
+
 ## Compile and run the project
 
 ```bash

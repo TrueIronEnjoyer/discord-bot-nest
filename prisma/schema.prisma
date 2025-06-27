@@ -18,8 +18,8 @@ model UserStat {
   id          String   @id @default(cuid())
   userId      String
   serverId    String
-  dailyPoints Int      @default(0)
-  allPoints Int      @default(0)
+  dailycoins Int      @default(0)
+  coins BigInt      @default(0)
   messages    Int      @default(0)
   voiceTime   Int      @default(0)
   lastReset   DateTime @default(now())

@@ -18,11 +18,7 @@ model UserStat {
   id          String   @id @default(cuid())
   userId      String
   serverId    String
-  dailycoins Int      @default(0)
-  coins BigInt      @default(0)
-  messages    Int      @default(0)
-  voiceTime   Int      @default(0)
-  lastReset   DateTime @default(now())
+  coins       BigInt   @default(0)
 
   @@unique([userId, serverId])
 }
